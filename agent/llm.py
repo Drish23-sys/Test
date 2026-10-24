@@ -75,5 +75,5 @@ class DryRunLLM:
         if self.step == 1:
             return '{"thought": "See which data files exist.", "action": "list_files", "args": {}}'
         if self.step == 2:
-            return '{"thought": "Check a calculation.", "action": "calculator", "args": {"expression": "2 + 2 * 10"}}'
+            return '{"thought": "Check a calculation.", "action": "calculator", "args": {"expression": "2 * 10"}}'
         return '{"thought": "I have enough.", "final_answer": "Dry run OK: tools executed (list_files, calculator)."}'
